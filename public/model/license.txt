@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fantasy Ball
+* source:	https://sketchfab.com/3d-models/fantasy-ball-978aef525c794b81ac56f58c8e4802cf
+* author:	smice (https://sketchfab.com/smice)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fantasy Ball" (https://sketchfab.com/3d-models/fantasy-ball-978aef525c794b81ac56f58c8e4802cf) by smice (https://sketchfab.com/smice) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

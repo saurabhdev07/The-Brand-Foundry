@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face{
+    font-family: 'bebas-neue';
+    src: url('/fonts/BebasNeue.woff2') format('woff2');
+  }
+  @font-face{
+    font-family: 'vogue';
+    src: url('/fonts/Vogue.ttf') format('truetype');
+  }
+  @font-face{
+    font-family: 'creato-display';
+    src: url('/fonts/CreatoDisplay.otf') format('opentype');
+  }
+  @font-face{
+    font-family: 'creato-display-regular';
+    src: url('/fonts/CreatoDisplayRegular.otf') format('opentype');
+  }
+  @font-face{
+    font-family: 'creato-display-regular-italic';
+    src: url('/fonts/CreatoDisplayRegularItalic.otf') format('opentype');
+  }
+  @font-face{
+    font-family: 'creato-display-bold';
+    src: url('/fonts/CreatoDisplayBold.otf') format('opentype');
+  }
+}
+
+@layer utilities {
+  .mask-clip-path {
+    clip-path: polygon(polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%));
+  }
+
+  .animated-title {
+    @apply flex flex-col gap-1 md:text-7xl text-3xl uppercase leading-[.8] sm:px-32 md:text-[6rem];
+  }
+
+  .animated-word {
+    @apply font-bebas-neue opacity-0;
+    transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
+    transform-origin: 50% 50% -150px !important;
+    will-change: opacity, transform;
+  }
+}
+
+:root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #7E57C2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #7E57C2;
+  }
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'creato-display', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none
+}
+
+/* Hero specific styling */
+#clip-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* For smoother animations */
+.absolute {
+  will-change: transform, width, height, border-radius;
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform 0.15s ease-out, width 0.3s ease, height 0.3s ease;
+}
+
+.zoom-hover {
+  cursor: none;
+  transition: all 0.3s ease;
+}
+
+.zoom-hover:hover {
+  color: #f0f0f0;
+}
