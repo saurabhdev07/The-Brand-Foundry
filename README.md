@@ -6,6 +6,13 @@
 
 ---
 
+## Live Demo
+
+Check out the live app on Vercel: [The Brand Foundry Live](https://the-brand-foundry.vercel.app/)
+
+
+---
+
 ## ✨ Features
 
 - **🎮 Immersive 3D Experience**: Integrated high-fidelity 3D models using Three.js and React Three Fiber.
@@ -76,3 +83,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 **Saurabh Yadav** - [GitHub](https://github.com/saurabhdev07)
 
 Project Link: [https://github.com/saurabhdev07/The-Brand-Foundry](https://github.com/saurabhdev07/The-Brand-Foundry)
+
